@@ -7,23 +7,24 @@
 
   --color-accent1: #FA707E;
   --color-accent2: #020050;
+}
 
+:root.light {
   /* The colors I want to be responsive to light or dark mode must have specific names to use them then */
-  --color-background: var(--color-primary-base);
+  --color-background: var(--color-primary-lighten2);
 
   --color-border: var(--color-primary-darken1);
 
   --color-text: var(--color-pirmary-lighten2);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--color-primary-base);
+:root.dark {
+  /* The colors I want to be responsive to light or dark mode must have specific names to use them then */
+  --color-background: var(--color-primary-base);
 
-    --color-border: var(--color-primary-lighten2);
+  --color-border: var(--color-primary-lighten2);
 
-    --color-text: var(--color-primary-darken1);
-  }
+  --color-text: var(--color-primary-darken1);
 }
 
 *,
