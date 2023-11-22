@@ -6,25 +6,33 @@
   --color-primary-darken1: #2C0052;
 
   --color-accent1: #FA707E;
-  --color-accent2: #020050;
+  --color-accent2: #B6535D;
+  --color-accent3: #020050;
+  --color-accent4: #6F34B7;
 }
 
 :root.light {
   /* The colors I want to be responsive to light or dark mode must have specific names to use them then */
   --color-background: var(--color-primary-lighten2);
-
   --color-border: var(--color-primary-darken1);
-
-  --color-text: var(--color-pirmary-lighten2);
+  --color-text: var(--color-primary-lighten2);
+  --color-text-accent: var(--color-accent2);
+  --color-modal-header: var(--color-primary-darken1);
+  --color-spec-table: var(--color-primary-lighten2);
+  --color-fab-button: var(--color-primary-darken1);
+  --color-overlay: #6F34B7;
 }
 
 :root.dark {
   /* The colors I want to be responsive to light or dark mode must have specific names to use them then */
   --color-background: var(--color-primary-base);
-
   --color-border: var(--color-primary-lighten2);
-
   --color-text: var(--color-primary-darken1);
+  --color-text-accent: var(--color-accent1);
+  --color-modal-header: var(--color-primary-lighten1);
+  --color-spec-table: var(--color-primary-lighten1);
+  --color-fab-button: var(--color-primary-lighten2);
+  --color-overlay: #7400D8;
 }
 
 *,
